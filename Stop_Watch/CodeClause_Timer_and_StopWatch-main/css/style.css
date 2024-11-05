@@ -1,0 +1,180 @@
+/* Import custom font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+/* import Css variable */
+@import url(/css/partial/_variable.css);
+
+.Container {
+    width: 100vw;
+    max-width: 800px;
+    border-radius: 15px;
+    color: #fff;
+    margin: auto;
+    padding: 15px;
+    background-color: #1a1a2e;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff82;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffffa8;
+    text-transform: uppercase;
+}
+
+.stopWatch {
+    padding: 40px 0;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.stopWatch:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.digits {
+    text-align: center;
+    font-size: 60px;
+    color: #fffa;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+}
+
+.text {
+    font-size: 22px;
+    color: #cccccc;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+#count {
+    position: relative;
+    top: -40px;
+    left: 30px;
+    font-size: 18px;
+}
+
+#btns {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn:hover {
+    background: #1f4068;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.laps {
+    position: relative;
+    max-height: 100px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.laps .lap {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.laps .lap.active p {
+    color: #9af545;
+    font-weight: 800;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.clock div {
+    width: 20%;
+    text-align: center;
+}
+
+.number {
+    font-size: 50px;
+    color: #ffffffcc;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.colon {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .digits {
+        font-size: 45px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .stopWatch {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .digits {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+}
